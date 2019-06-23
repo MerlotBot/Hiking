@@ -13,6 +13,7 @@
 		BBB7E54522BF6A2100EFD030 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBB7E54422BF6A2100EFD030 /* Assets.xcassets */; };
 		BBB7E54822BF6A2100EFD030 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBB7E54722BF6A2100EFD030 /* Preview Assets.xcassets */; };
 		BBB7E54B22BF6A2100EFD030 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBB7E54922BF6A2100EFD030 /* LaunchScreen.storyboard */; };
+		BBB7E55422BF6A6D00EFD030 /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB7E55322BF6A6D00EFD030 /* Hike.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BBB7E54722BF6A2100EFD030 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BBB7E54A22BF6A2100EFD030 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBB7E54C22BF6A2100EFD030 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBB7E55322BF6A6D00EFD030 /* Hike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hike.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		BBB7E53D22BF6A1F00EFD030 /* Hiking */ = {
 			isa = PBXGroup;
 			children = (
+				BBB7E55222BF6A5400EFD030 /* Models */,
 				BBB7E53E22BF6A1F00EFD030 /* AppDelegate.swift */,
 				BBB7E54022BF6A1F00EFD030 /* SceneDelegate.swift */,
 				BBB7E54222BF6A1F00EFD030 /* ContentView.swift */,
@@ -73,6 +76,14 @@
 				BBB7E54722BF6A2100EFD030 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BBB7E55222BF6A5400EFD030 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BBB7E55322BF6A6D00EFD030 /* Hike.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 			files = (
 				BBB7E53F22BF6A1F00EFD030 /* AppDelegate.swift in Sources */,
 				BBB7E54122BF6A1F00EFD030 /* SceneDelegate.swift in Sources */,
+				BBB7E55422BF6A6D00EFD030 /* Hike.swift in Sources */,
 				BBB7E54322BF6A1F00EFD030 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
