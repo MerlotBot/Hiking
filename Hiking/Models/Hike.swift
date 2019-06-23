@@ -23,9 +23,9 @@ extension Hike {
         
         return [
         
-            Hike(name: "Hike1", imageURL: "img", miles: 10),
-            Hike(name: "Hike2", imageURL: "img", miles: 10),
-            Hike(name: "Hike3", imageURL: "img", miles: 2)
+            Hike(name: "Salmonberry Trail", imageURL: "sal", miles: 6),
+            Hike(name: "Tom, Dick, and Harry Mountain", imageURL: "tom", miles: 5.8),
+            Hike(name: "Tamanawas Falls", imageURL: "tam", miles: 5)
         ]
     }
 }
