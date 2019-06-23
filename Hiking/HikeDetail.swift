@@ -13,11 +13,18 @@ struct HikeDetail: View {
     
     let hike: Hike
     
+    @State var zoomed = false
+    
     var body: some View {
         VStack {
             Image(hike.imageURL)
             .resizable()
-            .aspectRatio(contentMode: .fit)
+                .aspectRatio(contentMode: self.zoomed ? .fill : .fit)
+                .tapAction {
+                    withAnimation(.basic(duration: 2)) {
+                    self.zoomed.toggle()
+                    }
+            }
             
             Text(hike.name)
             .font(.largeTitle)
