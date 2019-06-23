@@ -13,7 +13,6 @@ struct ContentView : View {
     let hikes = Hike.all()
     
     var body: some View {
-        
         NavigationView {
             List(hikes) { hike in
                 HikeCell(hike: hike)
@@ -34,15 +33,14 @@ struct ContentView_Previews : PreviewProvider {
 struct HikeCell : View {
     
     let hike: Hike
+    
     var body: some View {
-        
-        return NavigationButton(destination: Text(hike.name)) {
+        return NavigationButton(destination: HikeDetail(hike: hike)) {
             HStack {
                 Image(hike.imageURL)
                     .resizable()
                     .frame(width: 100, height: 100)
                     .cornerRadius(16)
-                
                 VStack(alignment: .leading) {
                     Text(hike.name)
                     Text(String(format: "%g", hike.miles))
